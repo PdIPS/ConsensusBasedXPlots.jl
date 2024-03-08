@@ -1,0 +1,13 @@
+name = "ConsensusBasedXPlots"
+uuid = "69c88b9d-9dd6-4dd3-8f65-085fa43a946d"
+authors = ["Dr Rafael Bailo"]
+version = "0.0.1"
+
+[compat]
+julia = "1.9"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
