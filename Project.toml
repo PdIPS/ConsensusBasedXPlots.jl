@@ -1,13 +1,24 @@
 name = "ConsensusBasedXPlots"
 uuid = "69c88b9d-9dd6-4dd3-8f65-085fa43a946d"
 authors = ["Dr Rafael Bailo"]
-version = "0.0.1"
+version = "1.0.0"
+
+[deps]
+LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
 
 [compat]
+LaTeXStrings = "1"
+Plots = "1"
+Reexport = "1"
 julia = "1.9"
 
 [extras]
+Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
+JuliaFormatter = "98e50ef6-434e-11e9-1051-2b60c6c9e899"
+SafeTestsets = "1bc83da4-3b8d-516f-aca4-4fe02f6d838f"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
-test = ["Test"]
+test = ["Aqua", "JuliaFormatter", "SafeTestsets", "Test"]

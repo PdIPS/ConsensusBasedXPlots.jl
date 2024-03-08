@@ -1,6 +1,13 @@
 using ConsensusBasedXPlots
-using Test
+
+using SafeTestsets, Test
 
 @testset "ConsensusBasedXPlots.jl" begin
-    # Write your tests here.
+  for test ∈ ["aqua", "format"]
+    @eval begin
+      @safetestset $test begin
+        include($test * ".jl")
+      end
+    end
+  end
 end
